@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration Page</title>
+	</head>
+	<body>
+		<!-- Breadcrumb Navigation -->
+		<nav aria-label="Breadcrumb" role="navigation">
+			<a href="#" aria-label="Home">Home</a>
+			<span aria-hidden="true">/</span>
+			<a href="./index.html" aria-label="About Me">About Me</a>
+			<span aria-hidden="true">/</span>
+			<a href="#" aria-label="Registration page">Register here</a>
+		</nav>
+
+		<!-- Registration Form Content -->
+		<section aria-labelledby="registration-heading">
+			<h1 id="registration-heading">Registration Form</h1>
+			<form
+				action="process_form.php"
+				method="post"
+				aria-labelledby="registration-form-description"
+			>
+				<p id="registration-form-description">
+					Please fill out the following information to complete your
+					registration.
+				</p>
+
+				<label for="first_name">First Name:</label>
+				<input
+					type="text"
+					id="first_name"
+					name="first_name"
+					required
+					aria-labelledby="first-name-label"
+				/>
+
+				<label id="first-name-label" hidden>First Name</label>
+
+				<label for="last_name">Last Name:</label>
+				<input
+					type="text"
+					id="last_name"
+					name="last_name"
+					required
+					aria-labelledby="last-name-label"
+				/>
+
+				<label id="last-name-label" hidden>Last Name</label>
+
+				<label for="gender">Gender:</label>
+				<select
+					id="gender"
+					name="gender"
+					required
+					aria-labelledby="gender-label"
+				>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label id="gender-label" hidden>Gender</label>
+
+				<label for="date_of_birth">Date of Birth:</label>
+				<input
+					type="date"
+					id="date_of_birth"
+					name="date_of_birth"
+					required
+					aria-labelledby="dob-label"
+				/>
+
+				<label id="dob-label" hidden>Date of Birth</label>
+
+				<label for="email">Email Address:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required
+					aria-labelledby="email-label"
+				/>
+
+				<label id="email-label" hidden>Email Address</label>
+
+				<label for="education_level">Education Level:</label>
+				<select
+					id="education_level"
+					name="education_level"
+					required
+					aria-labelledby="education-label"
+				>
+					<option value="bsc">BSc</option>
+					<option value="msc">MSc</option>
+					<option value="diploma">Diploma</option>
+					<option value="phd">Doctorate (PhD)</option>
+					<option value="high_school">High School</option>
+					<option value="undergraduate">Undergraduate</option>
+					<option value="middle_school">Middle School</option>
+					<option value="post_graduate">Post Graduate</option>
+				</select>
+
+				<label id="education-label" hidden>Education Level</label>
+
+				<label for="country">Country:</label>
+				<select
+					id="country"
+					name="country"
+					required
+					aria-labelledby="country-label"
+				>
+					<option value="afghanistan">Afghanistan</option>
+					<option value="albania">Albania</option>
+					<option value="algeria">Algeria</option>
+					<option value="andorra">Andorra</option>
+					<option value="angola">Angola</option>
+					<option value="argentina">Argentina</option>
+					<option value="australia">Australia</option>
+					<option value="austria">Austria</option>
+					<option value="bahamas">Bahamas</option>
+					<option value="bangladesh">Bangladesh</option>
+					<option value="barbados">Barbados</option>
+					<option value="belgium">Belgium</option>
+					<option value="brazil">Brazil</option>
+					<option value="canada">Canada</option>
+					<option value="china">China</option>
+					<option value="colombia">Colombia</option>
+					<option value="denmark">Denmark</option>
+					<option value="egypt">Egypt</option>
+					<option value="finland">Finland</option>
+					<option value="france">France</option>
+					<option value="germany">Germany</option>
+					<option value="greece">Greece</option>
+					<option value="india">India</option>
+					<option value="ireland">Ireland</option>
+					<option value="italy">Italy</option>
+					<option value="japan">Japan</option>
+					<option value="kenya">Kenya</option>
+					<option value="mexico">Mexico</option>
+					<option value="netherlands">Netherlands</option>
+					<option value="new_zealand">New Zealand</option>
+					<option value="nigeria">Nigeria</option>
+					<option value="norway">Norway</option>
+					<option value="pakistan">Pakistan</option>
+					<option value="portugal">Portugal</option>
+					<option value="russia">Russia</option>
+					<option value="singapore">Singapore</option>
+					<option value="south_africa">South Africa</option>
+					<option value="spain">Spain</option>
+					<option value="sweden">Sweden</option>
+					<option value="switzerland">Switzerland</option>
+					<option value="united_kingdom">United Kingdom</option>
+					<option value="united_states">United States</option>
+				</select>
+
+				<label id="country-label" hidden>Country</label>
+
+				<label for="state_city">State/City of Residence:</label>
+				<input
+					type="text"
+					id="state_city"
+					name="state_city"
+					required
+					aria-labelledby="state-city-label"
+				/>
+
+				<label id="state-city-label" hidden>State/City of Residence</label>
+
+				<label for="employment_status">Employment Status:</label>
+				<select
+					id="employment_status"
+					name="employment_status"
+					required
+					aria-labelledby="employment-status-label"
+				>
+					<option value="employed">Employed</option>
+					<option value="unemployed">Unemployed</option>
+					<option value="self-employed">Self Employed</option>
+				</select>
+
+				<label id="employment-status-label" hidden>Employment Status</label>
+
+				<label for="phone_number">Phone Number:</label>
+				<input
+					type="tel"
+					id="phone_number"
+					name="phone_number"
+					required
+					aria-labelledby="phone-number-label"
+				/>
+
+				<label id="phone-number-label" hidden>Phone Number</label>
+
+				<label for="choose_school">Choose School:</label>
+				<input
+					type="text"
+					id="choose_school"
+					name="choose_school"
+					required
+					aria-labelledby="choose-school-label"
+				/>
+
+				<label id="choose-school-label" hidden>Choose School</label>
+
+				<label for="course_of_study">Choose Course of Study:</label>
+				<input
+					type="text"
+					id="course_of_study"
+					name="course_of_study"
+					required
+					aria-labelledby="course-of-study-label"
+				/>
+
+				<label id="course-of-study-label" hidden>Choose Course of Study</label>
+
+				<label for="hear_about_us">How did you hear about us?</label>
+				<select
+					id="hear_about_us"
+					name="hear_about_us"
+					required
+					aria-labelledby="hear-about-us-label"
+				>
+					<option value="word_of_mouth">Twitter</option>
+					<option value="online_search">Facebook</option>
+					<option value="social_media">Instagram</option>
+					<option value="events">Youtube</option>
+					<option value="other_channel">Others</option>
+				</select>
+
+				<label id="hear-about-us-label" hidden
+					>How did you hear about us?</label
+				>
+
+				<label for="discount_code">Scholarship/Discount Code (optional):</label>
+				<input
+					type="text"
+					id="discount_code"
+					name="discount_code"
+					aria-labelledby="discount-code-label"
+				/>
+
+				<label id="discount-code-label" hidden>Scholarship/Discount Code</label>
+
+				<input
+					type="checkbox"
+					id="agree_terms"
+					name="agree_terms"
+					required
+					aria-labelledby="agree-terms-label"
+				/>
+				<label id="agree-terms-label"
+					>By clicking continue, I agree to the
+					<a href="terms_of_use.html" aria-label="Terms of Use">Terms of Use</a>
+					and acknowledge that I have read the
+					<a href="privacy_policy.html" aria-label="Privacy Policy"
+						>Privacy Policy</a
+					>.</label
+				>
+
+				<button type="submit">Proceed</button>
+                <p>Already have an account? <a href="#" aria-label="Sign in">Sign IN</a></p>
+			</form>
+		</section>
+	</body>
+</html>
